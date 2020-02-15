@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="huabanleng <= 0.254\nentropy = 1.584\nsamples = 105\nvalue = [36, 33, 36]"] ;
+1 [label="entropy = 0.0\nsamples = 36\nvalue = [36, 0, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="huabanwide <= 0.688\nentropy = 0.999\nsamples = 69\nvalue = [0, 33, 36]"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="huabanleng <= 0.693\nentropy = 0.503\nsamples = 36\nvalue = [0, 32, 4]"] ;
+2 -> 3 ;
+4 [label="huabanwide <= 0.625\nentropy = 0.206\nsamples = 31\nvalue = [0, 30, 1]"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 30\nvalue = [0, 30, 0]"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]"] ;
+4 -> 6 ;
+7 [label="huabanwide <= 0.604\nentropy = 0.971\nsamples = 5\nvalue = [0, 2, 3]"] ;
+3 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3]"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]"] ;
+7 -> 9 ;
+10 [label="huabanleng <= 0.675\nentropy = 0.196\nsamples = 33\nvalue = [0, 1, 32]"] ;
+2 -> 10 ;
+11 [label="huaeleng <= 0.458\nentropy = 1.0\nsamples = 2\nvalue = [0, 1, 1]"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]"] ;
+11 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]"] ;
+11 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 31\nvalue = [0, 0, 31]"] ;
+10 -> 14 ;
+}
